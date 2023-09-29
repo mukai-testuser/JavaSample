@@ -17,6 +17,9 @@ public class JavaSample  {
         Sample sample = (String name) -> { 
             return String.format("Hello %s!!",name);
         };
+        
+        //dev-20230929ブランチ用
+        Sample sample2 = (String name) -> { return "Hoge"; };
 
 //        sample = new Sample() {
 //            @Override
@@ -26,5 +29,8 @@ public class JavaSample  {
 //        };
         String s = sample.greeting("Tanaka");
         System.out.println(s);
+        
+        String s2 = sample2.greeting("Yamada");
+        System.out.println("s2:"+s2);
     }
 }
